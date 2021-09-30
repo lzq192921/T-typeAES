@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "Qzgz9h7NggFBZ1cKLJ7xQDZH5iRYnrKNsMfDz/LVL6FKfduXATC3Of0VEJKYXTC9DfF2rHRWVIChCRWgScpeSA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\lizhenqiang\\Desktop\\grover-blocks-masterdepth - 副本 (2) - 副本 - 副本\\aes\\cs.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lizhenqiang\\.nuget\\packages\\filehelpers\\3.4.0\\filehelpers.3.4.0.nupkg.sha512",
+    "C:\\Users\\lizhenqiang\\.nuget\\packages\\microsoft.netcore.app\\2.0.0\\microsoft.netcore.app.2.0.0.nupkg.sha512",
+    "C:\\Users\\lizhenqiang\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.0.0\\microsoft.netcore.dotnetapphost.2.0.0.nupkg.sha512",
+    "C:\\Users\\lizhenqiang\\.nuget\\packages\\microsoft.netcore.dotnethostpolicy\\2.0.0\\microsoft.netcore.dotnethostpolicy.2.0.0.nupkg.sha512",
+    "C:\\Users\\lizhenqiang\\.nuget\\packages\\microsoft.netcore.dotnethostresolver\\2.0.0\\microsoft.netcore.dotnethostresolver.2.0.0.nupkg.sha512",
+    "C:\\Users\\lizhenqiang\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\lizhenqiang\\.nuget\\packages\\microsoft.quantum.development.kit\\0.7.1905.3109\\microsoft.quantum.development.kit.0.7.1905.3109.nupkg.sha512",
+    "C:\\Users\\lizhenqiang\\.nuget\\packages\\microsoft.quantum.simulators\\0.7.1905.3109\\microsoft.quantum.simulators.0.7.1905.3109.nupkg.sha512",
+    "C:\\Users\\lizhenqiang\\.nuget\\packages\\microsoft.quantum.standard\\0.7.1905.3109\\microsoft.quantum.standard.0.7.1905.3109.nupkg.sha512",
+    "C:\\Users\\lizhenqiang\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
