@@ -246,7 +246,7 @@ operation Mull(a : Qubit[], b: Qubit[], res: Qubit[], t: Qubit[], p: Qubit[], co
             LPAND(t[0], t[5], p[1], costing);
             LPAND(t[1], t[6], p[2], costing);
             LPAND(t[2], t[7], p[3], costing);
-            LPAND(t[4], t[9], p[4], costing);     ///与后面乘法相同部分
+            LPAND(t[4], t[9], p[4], costing);     
 
             LPXOR(res[2], p[2], p[1]);
             CNOT(res[1], p[0]);
@@ -341,7 +341,7 @@ operation Mull(a : Qubit[], b: Qubit[], res: Qubit[], t: Qubit[], p: Qubit[], co
                 CNOT(a[1], b[3]);
                 CNOT(a[0], b[2]);
                 CNOT(a[2], b[0]);
-                CNOT(a[3], b[1]);            ///中间部分
+                CNOT(a[3], b[1]);            
                 CNOT(a[3], m[0]);
                 CNOT(m[0], b[0]);
                 CNOT(m[0], b[2]);
