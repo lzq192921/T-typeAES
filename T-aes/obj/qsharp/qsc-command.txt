@@ -1,0 +1,19 @@
+:: files ::
+MaximovMixColumn.qs
+QAES.qs
+QTests.qs
+QUtilities.qs
+T-S-box.qs
+:: qsim ::
+:: references ::
+C:\Users\admin\.nuget\packages\filehelpers\3.4.0\lib\netstandard2.0\FileHelpers.dll
+C:\Users\admin\.nuget\packages\microsoft.quantum.qsharp.core\0.15.2101125897\lib\netstandard2.1\Microsoft.Quantum.QSharp.Core.dll
+C:\Users\admin\.nuget\packages\microsoft.quantum.runtime.core\0.15.2101125897\lib\netstandard2.1\Microsoft.Quantum.Runtime.Core.dll
+C:\Users\admin\.nuget\packages\microsoft.quantum.simulators\0.15.2101125897\lib\netstandard2.1\Microsoft.Quantum.Simulation.Common.dll
+C:\Users\admin\.nuget\packages\microsoft.quantum.simulators\0.15.2101125897\lib\netstandard2.1\Microsoft.Quantum.Simulation.QCTraceSimulatorRuntime.dll
+C:\Users\admin\.nuget\packages\microsoft.quantum.simulators\0.15.2101125897\lib\netstandard2.1\Microsoft.Quantum.Simulators.dll
+C:\Users\admin\.nuget\packages\microsoft.quantum.standard\0.15.2101125897\lib\netstandard2.1\Microsoft.Quantum.Standard.dll
+C:\Users\admin\.nuget\packages\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll
+C:\Users\admin\.nuget\packages\numsharp\0.20.5\lib\netstandard2.0\NumSharp.Core.dll
+:: command ::
+dotnet "C:\Users\admin\.nuget\packages\microsoft.quantum.development.kit\0.15.2101125897\build\../tools/qsc/Microsoft.Quantum.CsharpGeneration.App.dll"  --qst "cs" --input "MaximovMixColumn.qs" "QAES.qs" "QTests.qs" "QUtilities.qs" "T-S-box.qs" --references "C:\Users\admin\.nuget\packages\filehelpers\3.4.0\lib\netstandard2.0\FileHelpers.dll" "C:\Users\admin\.nuget\packages\microsoft.quantum.qsharp.core\0.15.2101125897\lib\netstandard2.1\Microsoft.Quantum.QSharp.Core.dll" "C:\Users\admin\.nuget\packages\microsoft.quantum.runtime.core\0.15.2101125897\lib\netstandard2.1\Microsoft.Quantum.Runtime.Core.dll" "C:\Users\admin\.nuget\packages\microsoft.quantum.simulators\0.15.2101125897\lib\netstandard2.1\Microsoft.Quantum.Simulation.Common.dll" "C:\Users\admin\.nuget\packages\microsoft.quantum.simulators\0.15.2101125897\lib\netstandard2.1\Microsoft.Quantum.Simulation.QCTraceSimulatorRuntime.dll" "C:\Users\admin\.nuget\packages\microsoft.quantum.simulators\0.15.2101125897\lib\netstandard2.1\Microsoft.Quantum.Simulators.dll" "C:\Users\admin\.nuget\packages\microsoft.quantum.standard\0.15.2101125897\lib\netstandard2.1\Microsoft.Quantum.Standard.dll" "C:\Users\admin\.nuget\packages\newtonsoft.json\12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll" "C:\Users\admin\.nuget\packages\numsharp\0.20.5\lib\netstandard2.0\NumSharp.Core.dll" --output "obj/qsharp/"

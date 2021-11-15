@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "pENXemMmYR4qCWrVb8LwtRF4Y4kTlQKL70AGh7xurJpRvHo1gy5URXmROzaKYkM//dQI/iVlp4IDN1QcwUlNCg==",
+  "success": true,
+  "projectFilePath": "D:\\桌面\\T-aes - 21\\cs.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\李振强\\.nuget\\packages\\filehelpers\\3.4.0\\filehelpers.3.4.0.nupkg.sha512",
+    "C:\\Users\\李振强\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\李振强\\.nuget\\packages\\microsoft.quantum.development.kit\\0.15.2101125897\\microsoft.quantum.development.kit.0.15.2101125897.nupkg.sha512",
+    "C:\\Users\\李振强\\.nuget\\packages\\microsoft.quantum.qsharp.core\\0.15.2101125897\\microsoft.quantum.qsharp.core.0.15.2101125897.nupkg.sha512",
+    "C:\\Users\\李振强\\.nuget\\packages\\microsoft.quantum.runtime.core\\0.15.2101125897\\microsoft.quantum.runtime.core.0.15.2101125897.nupkg.sha512",
+    "C:\\Users\\李振强\\.nuget\\packages\\microsoft.quantum.simulators\\0.15.2101125897\\microsoft.quantum.simulators.0.15.2101125897.nupkg.sha512",
+    "C:\\Users\\李振强\\.nuget\\packages\\microsoft.quantum.standard\\0.15.2101125897\\microsoft.quantum.standard.0.15.2101125897.nupkg.sha512",
+    "C:\\Users\\李振强\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
+    "C:\\Users\\李振强\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\李振强\\.nuget\\packages\\numsharp\\0.20.5\\numsharp.0.20.5.nupkg.sha512",
+    "C:\\Users\\李振强\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\李振强\\.nuget\\packages\\system.reflection.metadata\\1.7.0\\system.reflection.metadata.1.7.0.nupkg.sha512",
+    "C:\\Users\\李振强\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
+  ],
+  "logs": []
+}
