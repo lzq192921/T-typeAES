@@ -4,7 +4,7 @@ We provides T-aes in the programming language Q# and depends on the Microsoft [Q
 In addition, our W-type S-box in the programming language Qiskit is provided  to verify the correctness of our W-type S-box.
 
 ## Installation instructions
-- [`T-aes`](INSTALL.md)
+- [`T-aes`](\T-aes\INSTALL_T.md)
 - [`W-tyep S-box`](INSTALL_W.md)
 
 # Contributing
