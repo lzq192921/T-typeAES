@@ -5,7 +5,7 @@ In addition, our W-type S-box in the programming language Qiskit is provided  to
 
 ## Installation instructions
 - [`T-aes`](\T-aes\INSTALL.md)
-- [`W-tyep S-box`](INSTALL.md)
+- [`W-tyep S-box`](INSTALL_W.md)
 
 # Contributing
 
