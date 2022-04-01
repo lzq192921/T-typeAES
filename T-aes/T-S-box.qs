@@ -215,7 +215,7 @@ operation Mull(a : Qubit[], b: Qubit[], res: Qubit[], t: Qubit[], p: Qubit[], co
 
 
             LPAND(a[0], b[0], p[0], costing);
-            LPAND(a[1], b[1], p[1], costing);                      //E in Fig.19 and Fig.20
+            LPAND(a[1], b[1], p[1], costing);                      //E in Fig.24 and Fig.25
             LPAND(a[2], b[2], p[2], costing);
             LPAND(a[3], b[3], p[3], costing);
             LPAND(t[3], t[8], p[4], costing);     
@@ -271,16 +271,16 @@ operation Mull(a : Qubit[], b: Qubit[], res: Qubit[], t: Qubit[], p: Qubit[], co
         body (...)
         {
                 // compute N
-                CNOT(a[3], a[2]);
-                CNOT(a[0], a[2]);
                 CNOT(a[1], a[3]);
-                CNOT(a[2], a[1]);
                 CNOT(a[0], a[3]);
+                CNOT(a[3], a[2]);
+                CNOT(a[2], a[1]);
+               
 
 
                 REWIRE(a[0], a[1], costing);
                 REWIRE(a[2], a[3], costing);
-                REWIRE(a[0], a[3], costing);
+                
 
 
                 CNOT(a[0], m[4]);
@@ -289,7 +289,7 @@ operation Mull(a : Qubit[], b: Qubit[], res: Qubit[], t: Qubit[], p: Qubit[], co
 
                 LPAND(a[0], a[2], m[0], costing);
                 LPAND(m[4], a[3], m[1], costing);
-                LPAND(m[5], a[1], m[2], costing);                     ///inverse24       For           Fig.8
+                LPAND(m[5], a[1], m[2], costing);                     ///inverse24       For           Fig.13
                 CNOT(m[0], m[3]);  
                 CNOT(a[1], a[0]);            
                 CNOT(a[3], a[2]);
@@ -316,14 +316,14 @@ operation Mull(a : Qubit[], b: Qubit[], res: Qubit[], t: Qubit[], p: Qubit[], co
 
 
 
-                REWIRE(b[0], b[3], costing);
+               
                 REWIRE(b[2], b[3], costing);
                 REWIRE(b[0], b[1], costing);
-                CNOT(b[0], b[3]);
+                
                 CNOT(b[2], b[1]);
-                CNOT(b[1], b[3]);
-                CNOT(b[0], b[2]);
                 CNOT(b[3], b[2]);
+                CNOT(b[0], b[3]);
+                CNOT(b[1], b[3]);
         }
         adjoint auto;
     }
@@ -343,7 +343,7 @@ operation Mull(a : Qubit[], b: Qubit[], res: Qubit[], t: Qubit[], p: Qubit[], co
                 Inverse24(c[8..11], f[0..3], e[15..20], costing);
                 CNOTnBits(f[0..3], f[4..7], 4);
                 Mul(a[0..3], f[0..3], b[0..3], g[0..9], g[10..14], costing);
-                Mul(a[4..7], f[4..7], b[4..7], h[0..9], h[10..14], costing);                         ///Fig.19
+                Mul(a[4..7], f[4..7], b[4..7], h[0..9], h[10..14], costing);                         ///Fig.24
                (Adjoint  ForwardMul)(a[0..3], f[0..3], g[0..9], g[10..14], costing);
                 (Adjoint  ForwardMul)(a[4..7], f[4..7], h[0..9], h[10..14], costing);
                  CNOTnBits(f[0..3], f[4..7], 4);
@@ -374,7 +374,7 @@ operation inverse281(a: Qubit[], b: Qubit[], costing: Bool) : Unit
                 Inverse24(c[8..11], f[0..3], e[15..20], costing);
                 CNOTnBits(f[0..3], f[4..7], 4);
                 Mull(a[0..3], f[0..3], b[0..3], g[0..9], g[10..14], costing);
-                Mull(a[4..7], f[4..7], b[4..7], h[0..9], h[10..14], costing);                         ///Fig.20
+                Mull(a[4..7], f[4..7], b[4..7], h[0..9], h[10..14], costing);                         ///Fig.25
                 (Adjoint  ForwardMul)(a[0..3], f[0..3], g[0..9], g[10..14], costing);
                 (Adjoint  ForwardMul)(a[4..7], f[4..7], h[0..9], h[10..14], costing);
                 CNOTnBits(f[0..3], f[4..7], 4);
@@ -409,7 +409,7 @@ namespace InPlace {
             CNOT(a[1], a[3]);
 
 
-            REWIRE(a[0], a[1], costing);                               ///constant mul       Fig.9
+            REWIRE(a[0], a[1], costing);                               ///constant mul       Fig.14
             REWIRE(a[0], a[2], costing);
             REWIRE(a[2], a[3], costing);
         }
@@ -433,7 +433,7 @@ operation M(a: Qubit[], b: Qubit[], costing: Bool) : Unit
            CNOT(a[5], b[7]);
            CNOT(a[4], b[0]);
            CNOT(a[6], b[4]);
-           CNOT(a[2], b[3]);                                         ///M      Fig.11
+           CNOT(a[2], b[3]);                                         ///M      Fig.16
            CNOT(a[1], b[1]);
                                        
 
@@ -477,7 +477,7 @@ operation M(a: Qubit[], b: Qubit[], costing: Bool) : Unit
             CNOT(a[4], a[7]);
             CNOT(a[0], a[1]);
             CNOT(a[5], a[6]);
-                                                       ///AM^-1            Fig.12
+                                                       ///AM^-1            Fig.17
             CNOT(a[4], a[5]);
             CNOT(a[6], a[0]);
             CNOT(a[7], a[3]);
