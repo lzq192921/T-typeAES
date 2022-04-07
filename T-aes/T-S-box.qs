@@ -271,15 +271,16 @@ operation Mull(a : Qubit[], b: Qubit[], res: Qubit[], t: Qubit[], p: Qubit[], co
         body (...)
         {
                 // compute N
-                CNOT(a[1], a[3]);
-                CNOT(a[0], a[3]);
                 CNOT(a[3], a[2]);
+                CNOT(a[0], a[2]);
+                CNOT(a[1], a[3]);
                 CNOT(a[2], a[1]);
-               
+                CNOT(a[0], a[3]);
 
 
                 REWIRE(a[0], a[1], costing);
                 REWIRE(a[2], a[3], costing);
+                REWIRE(a[0], a[3], costing);
                 
 
 
@@ -317,13 +318,14 @@ operation Mull(a : Qubit[], b: Qubit[], res: Qubit[], t: Qubit[], p: Qubit[], co
 
 
                
+                REWIRE(b[0], b[3], costing);
                 REWIRE(b[2], b[3], costing);
                 REWIRE(b[0], b[1], costing);
-                
-                CNOT(b[2], b[1]);
-                CNOT(b[3], b[2]);
                 CNOT(b[0], b[3]);
+                CNOT(b[2], b[1]);
                 CNOT(b[1], b[3]);
+                CNOT(b[0], b[2]);
+                CNOT(b[3], b[2]);
         }
         adjoint auto;
     }
